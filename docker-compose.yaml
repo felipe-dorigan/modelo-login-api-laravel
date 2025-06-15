@@ -37,3 +37,10 @@ services:
       - pgdata:/var/lib/postgresql/data
     networks:
       - modelo-login-api-laravel
+
+networks:
+  modelo-login-api-laravel:
+    driver: bridge
+
+volumes:
+  pgdata:

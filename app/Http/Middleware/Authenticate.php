@@ -14,8 +14,7 @@ class Authenticate extends Middleware
      */
     protected function redirectTo($request)
     {
-        if (! $request->expectsJson()) {
-            return route('login');
-        }
+        // Como não estou usando o Laravel WEB somente como API, aqui precisa retornar null, e não redirecionar para o Login
+        return null;
     }
 }
